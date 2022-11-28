@@ -1,0 +1,36 @@
+import 'font-awesome/css/font-awesome.min.css';
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding:0;
+  outline:none;
+}
+body {
+ 
+  font-family: "Poppins", sans-serif;
+}
+
+.conTainer{
+  margin:0px 50px; 
+  padding:0px 20px;
+  transition: all 0.2s ease-in-out;
+}
+.swipe{
+  display:flex;
+  justify-content: center;
+  align-items:center; 
+  height:45vh;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  color:rgb(72, 68, 68); 
+  --swiper-navigation-size:22px; !important
+  
+}
