@@ -1,0 +1,234 @@
+.regMain {
+  background-color: rgb(237, 233, 233);
+  max-width: 1540px;
+  margin: auto;
+}
+.register {
+  padding: 13px;
+  margin-left: 10px;
+}
+.registerMain {
+  display: flex;
+  background-color: rgb(213, 210, 210);
+
+  margin: 10px;
+  height: 45vh;
+  padding: 4px;
+}
+.completeregister {
+  line-height: 20px;
+  height: 90vh;
+}
+
+.location img {
+  width: 40px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  max-width: 320px;
+}
+
+.location p {
+  margin: 0px 8px;
+}
+
+.regbutton {
+  margin-left: 19px;
+  background-color: rgb(225, 225, 225);
+  padding: 8px 24px;
+  border: 1px solid rgba(146, 144, 144, 0.609);
+  color: rgba(17, 17, 17, 0.921);
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.regbutton i {
+  color: rgba(17, 16, 16, 0.885);
+}
+.regDetails {
+  padding: 20px;
+  line-height: 25px;
+}
+.location h3 {
+  font-size: 13px;
+}
+.location span {
+  font-size: 12px;
+}
+.create label {
+  font-size: 13px;
+}
+.company {
+  margin-top: 15px;
+}
+.company label {
+  font-size: 13px;
+}
+.company input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 14px 15px;
+  /* border: 1px solid rgb(152, 151, 151); */
+}
+.nameform {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.phonType {
+  font-size: 13px;
+}
+.labelselect {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.labelselect select {
+  border-radius: 5px;
+  height: 2.2rem;
+  border: 0;
+  border: 1px solid rgb(152, 151, 151);
+}
+.reginpu {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.nameform select {
+  padding: 10px 0px;
+  border: 0;
+  border: 1px solid rgb(152, 151, 151);
+}
+.nameform input {
+  border-radius: 5px;
+  padding: 14px 5px;
+  
+}
+.creat {
+  display: flex;
+  align-items: center;
+}
+.phoneInput {
+  width: 360px;
+  margin-top: 20px;
+}
+.PhoneInputInput {
+  height: 40px;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 13px;
+  border-radius: 5px;
+}
+.phonType {
+  margin-top: 10px;
+  margin-right: 50px;
+}
+.email {
+  padding: 14px 20px;
+  width: 350px;
+  border-radius: 5px;
+  border:0;
+}
+.emailLogin p {
+  color: red;
+  font-size: 13px;
+}
+.emailLogin {
+  display: flex;
+  margin-left: 3rem;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  line-height: 2rem;
+}
+.emailLogin input {
+  font-size: 13px;
+  padding: 14px 20px;
+  width: 350px;
+  border-radius: 5px;
+  
+  
+}
+.emailLogin label {
+  font-size: 13px;
+  margin-bottom: -5px;
+}
+.lastdown {
+  margin: auto;
+  padding: 25px;
+}
+.lastdown form {
+  margin-bottom: 2rem;
+}
+.tickbox {
+  height: 16px;
+  width: 16px;
+}
+.ticklabel {
+  font-size: 15px;
+  padding: 5px;
+  font-size: 15px;
+}
+.nameform p {
+  color: red;
+  position: absolute;
+}
+.company p {
+  color: red;
+  font-size: 13px;
+}
+.lastdown h3 {
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+  margin-top: 1rem;
+}
+.lastdown p {
+  font-size: 15px;
+}
+
+.lastdown h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.registerButton {
+  font-size: 15px;
+  background-color: rgb(14, 113, 14);
+  border-radius: 5px;
+  padding: 6px 40px;
+  width: fit-content;
+  color: white;
+}
+
+.register {
+  padding: 1rem;
+}
+.ticklabel a {
+  color: rgb(41, 98, 183);
+  font-size: 15px;
+  text_decoratio: none;
+}
+
+.buttonright {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  
+  border:1px solid red;
+
+  
+}
+.success{
+  
+  border:1px solid green;
+
+
+}

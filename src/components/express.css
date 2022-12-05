@@ -1,0 +1,18 @@
+.expressmain{
+    margin:50px 100px;
+    border:1px solid black;
+    padding:15px 30px;
+}
+.exptext{
+    color:rgb(67, 65, 65);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.exptext h4{
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-top: 4px
+}
+.exptext p{
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,17 @@
+.containe{
+    margin-top:-140px;
+    padding:40px;
+    width:100%;
+}
+.marqueetext{
+    font-size: 14px;
+    padding:10px;
+    border-left:6px solid #004866;
+    height:45px;
+     background-color:#fd7d14bc ;
+    color:white;
+    border-bottom-right-radius:10px;
+    border-top-right-radius:10px;
+
+}
+

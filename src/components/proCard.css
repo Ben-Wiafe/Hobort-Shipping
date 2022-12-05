@@ -1,0 +1,54 @@
+.promain {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    min-width: 360px;
+    margin: 0px 30px;
+    border-radius: 7px;
+    height:350px;
+    margin-bottom:10px;
+}
+::-webkit-scrollbar{
+    width:0px;
+}
+.promain:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.399);
+}
+
+.procard img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    
+}
+
+.protext {
+    padding: 14px 16px;
+    margin-top: 10px;
+}
+
+.prohead {
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.774);
+}
+
+.propara {
+    margin-top: 14px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgba(27, 24, 24, 0.708);
+}
+
+.prolink {
+    text-decoration: none;
+    text-align: end;
+    color: rgb(68, 124, 230);
+}
+
+.prolink p {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
