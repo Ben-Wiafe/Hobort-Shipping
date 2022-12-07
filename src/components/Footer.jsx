@@ -26,7 +26,7 @@ const Footer = () => {
             </li>
           </ul>
           <ul className="box">
-            <li className="linkhead">Contact Us </li>
+            <li className="linkhead">CONTACT US</li>
             <li>
               <i className="fa-solid fa-phone-volume" />
               <a href="#">Terms and Conditions</a>
@@ -35,7 +35,7 @@ const Footer = () => {
               <i className="fa-solid fa-location-dot" />
 
               <a href="#">
-                US OFFICE: 815 Progress Ct Ste A <br />
+                US OFFICE: 815 Progress Ct Ste A
                      Lawrenceville GA 30043
               </a>
             </li>
@@ -44,11 +44,7 @@ const Footer = () => {
 
               <a href="#">GHANA OFFICE: JWVQ+9WR,Sakumono</a>
             </li>
-            <li>
-              <i className="fa-brands fa-" />
-
-              <a href="#">+1 404 543 4422</a>
-            </li>
+           
           </ul>
           <ul className="box">
             <li className="linkhead"> COMPANY </li>
@@ -70,10 +66,12 @@ const Footer = () => {
               <a href="#">Success Story</a>
             </li>
           </ul>
-          <div>
+
+          <div style={{fontSize:'15px', borderLeft:'1px solid black', height:'120px'}}></div>
+       
             <div className="line">
               <ul className="box">
-                <li className="linkhead">Post Hobort Group</li>
+                <li className="linkhead" style={{fontSize:'15px'}}>Post Hobort Group</li>
                 <li>
                   {" "}
                   <a href="#">About Hobort</a>
@@ -92,7 +90,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </div>
+         
         </div>
       </div>
       <div className="downfooter" />
