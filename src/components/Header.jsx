@@ -3,6 +3,7 @@ import gh from "../assets/logo.png";
 import "../components/Header.css";
 import { Link } from "react-router-dom";
 import Login from "./Login";
+import {GiHamburgerMenu} from 'react-icons/gi'
 
 const Header = () => {
   const [stickyClass, setStickyClass] = useState("");
@@ -41,7 +42,7 @@ const Header = () => {
 
   return (
     <>
-      <div className={`main ${stickyClass}`}>
+      <div className={`main example ${stickyClass}`}>
         <nav className="header">
           <a href="/">
             <img src={gh} alt="Website logo" />
@@ -61,6 +62,22 @@ const Header = () => {
               </button>
             </li>
           </ul>{" "}
+          <GiHamburgerMenu className="hamburger"/>
+          <ul className="Ulis">
+            <li>
+              <Link to="/">Home</Link>{" "}
+            </li>{" "}
+            <li>
+              <Link to="/about">About Us</Link>{" "}
+            </li>{" "}
+            <li> Services </li> <li> FAQ </li>{" "}
+            <li>
+              {" "}
+              <button  className="login" type="submit" onClick={()=> setShow(!show)}>
+                Login
+              </button>
+            </li>
+          </ul>{""}
         </nav>{" "}
         <div className={`sublist ${sticky}`}>
           <ul className={`subblist ${stickyback}`}>
