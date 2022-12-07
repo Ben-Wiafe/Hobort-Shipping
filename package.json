@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "bootstrap": "^5.2.3",
     "font-awesome": "^4.7.0",
     "formik": "^2.2.9",
     "node-sass": "^8.0.0",
