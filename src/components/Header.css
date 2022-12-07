@@ -59,12 +59,12 @@
    
   }
   .subblist li{
-    flex-grow:1;
+  
     white-space:nowrap;
     flex-wrap: wrap;
     cursor:pointer;
     padding:5px 0px;
-    margin-right:8px;
+    margin-right:10rem;
     font-size:14px;
     
   }
@@ -90,6 +90,12 @@
     color:white;
     font-family: Poppins;
     transition:0.2s ease all;
+}
+.hamburger{
+  display:none
+}
+.Ulis{
+  display:none;
 }
 
 
