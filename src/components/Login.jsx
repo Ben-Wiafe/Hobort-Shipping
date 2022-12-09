@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./login.css";
 import "./register.css";
 import { Link } from "react-router-dom";
@@ -26,7 +26,10 @@ const Login = () => {
       password: Yup.string().required("Required")
     })
   });
-
+  useEffect(() => {
+    // Here, we update the state using the setCount method
+    setDisplay(false);
+  }, []); 
   return (
     <>
    {
