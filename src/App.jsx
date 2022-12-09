@@ -5,7 +5,7 @@ import Register from "./components/Register";
 import About from "./components/About";
 import Home from "./components/Home";
 import Header from "./components/Header";
-import Section from "./components/Section";
+import LoginHomepage from "./components/LoginHomepage";
 
 const App = () => {
   return (
@@ -14,9 +14,10 @@ const App = () => {
       <div className="container" />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/section" exact element={<Section />} />
+        <Route path="/loginhome" exact element={<LoginHomepage/>} />
         <Route path="/register" element={<Register />} exact />
         <Route path="/about" element={<About />} exact />
+        {/* <Route path="/home" element={'*'} exact /> */}
       </Routes>
     </>
   );

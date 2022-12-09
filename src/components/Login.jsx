@@ -96,9 +96,9 @@ const Login = () => {
            </label>
          </div>
          <center>
-           <button className="loginButton">
+           <button className="loginButton" onClick={displayModal}>
              {" "}
-             <Link to="/section">
+             <Link to="/">
                {" "}
                <i className="fa-solid fa-circle-exclamation fa-sm" /> Login{" "}
              </Link>
