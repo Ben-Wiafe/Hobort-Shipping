@@ -6,7 +6,7 @@ import Create_from_past from './loginFiles/Create_from_past';
 import Create_from_fav from './loginFiles/Create_from_fav';
 import Get_quote from "./loginFiles/get_quote";
 import Schedule_pickup from "./loginFiles/schedule_pickup";
-
+import LoginHeader from "./LoginHeader";
 
 
 
@@ -18,7 +18,10 @@ const LoginHomepage = () => {
     setToggleState(index);
   };
   return (
-    <div style={{ margin: "auto", width: "80%" }}>
+
+   <>
+   <LoginHeader/>
+   <div style={{ margin: "auto", width: "80%" }}>
       <h2 style={{ fontSize: "22px",margin: '30px 0 20px' }}>Welcome to Hobort+</h2>
       <div
         style={{
@@ -169,6 +172,7 @@ const LoginHomepage = () => {
       </div>
       <Footer/>
     </div>
+   </>
   );
 };
 
