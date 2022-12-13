@@ -63,11 +63,12 @@
     white-space:nowrap;
     flex-wrap: wrap;
     cursor:pointer;
-    padding:5px 0px;
-    margin-right:10rem;
+    /* padding:5px 0px; */
+    margin-right:2rem;
     font-size:14px;
     
   }
+
   .subblist li:hover{
     color:#fd7e14 ;
     font-weight: 700;
