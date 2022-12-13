@@ -1,16 +1,14 @@
-.App {
-    font-family: sans-serif;
-  }
 
 
   .main {
-    box-shadow: 0px 1px 1px 1px rgba(2, 2, 3, 0.1);
     background-image: linear-gradient(to left, #004766f2, #42a3cdf4, #9dd8f1ed, #dceff7f9);
-    padding:10px 4.2rem;    
+    padding:13px 2rem;    
     width:100%;
+    margin:auto;
     transition:all 0.3s ease-in-out;
     z-index:999;
-    transition:0.5s;
+    
+    background-size: contain;
 
   }
   .stickynav{
@@ -25,7 +23,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    border-bottom: 1px solid rgb(244, 241, 241);
+    /* border-bottom: 1px solid rgb(244, 241, 241); */
 }
   .Ulist{
     display:flex;
@@ -37,9 +35,10 @@
   }
  .Ulist li{
     cursor:pointer;
-    margin-right:14px;
     text-decoration:none;
-    transition:0.5s;
+    transition:0.5s ease;
+    font-size: 14px;
+    color:black
  }
  .Ulist a{
   text-decoration:none;
@@ -63,40 +62,44 @@
     white-space:nowrap;
     flex-wrap: wrap;
     cursor:pointer;
-    /* padding:5px 0px; */
+    padding:10px 8px 0px 8px;
     margin-right:2rem;
-    font-size:14px;
+    font-size:17px;
     
   }
 
   .subblist li:hover{
     color:#fd7e14 ;
-    font-weight: 700;
+    transition: 0.2s ease;
 
 }
-.subblist a{
-  text-decoration: none;
-  color:white;
-}.header img{
+
+.header img{
     width:10rem;
     height:auto;
     margin-right: 10px;
   }
 .login{
-    padding:7px 30px;
-    border-color:#fd7e14 ;
-    border-radius:8px;
-    font-size: 15px;
+    padding:5px 13px;
+    font-size: 12px;
+    border-radius:2px;
+    border:1px solid #fd7e14;
     background:none;
-    color:white;
-    font-family: Poppins;
     transition:0.2s ease all;
-}
+    cursor:pointer;
+  }
 .hamburger{
   display:none
 }
 .Ulis{
   display:none;
 }
+.register_Hover:hover{
+  color: #fd7e14;
+  transition: 0.2s ease;
 
+}
 
+.register_Hover{
+  color:black
+}
