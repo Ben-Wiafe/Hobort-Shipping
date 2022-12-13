@@ -10,10 +10,10 @@ import LoginHomepage from "./components/LoginHomepage";
 const App = () => {
   return (
     <>
-      <Header />
       <div className="container" />
       <Routes>
-        <Route path="/" element={<Home />} /> <Route path="/loginhome" exact element={<LoginHomepage />} />{" "}
+        <Route path="/" element={<Home />} /> 
+        <Route path="/loginhome" exact element={<LoginHomepage />} />{" "}
         <Route path="/register" element={<Register />} exact />
         <Route path="/about" element={<About />} exact />= {/* <Route path="/home" element={'*'} exact /> */}{" "}
       </Routes>{" "}
