@@ -25,7 +25,6 @@ const About = () => {
             style={{
               display: "inline-block",
               height: "20px",
-              margin: "0",
               margin: "10px 0 20px -10px",
               padding: "0",
               listStyle: "none",
@@ -509,7 +508,6 @@ const About = () => {
                       border: "1px solid #ccc",
                       color: "gray",
                       fontWeight: "bold",
-                      marginBottom: "16px"
                     }}
                   />
                   <br />
@@ -952,7 +950,6 @@ const About = () => {
                       border: "1px solid #ccc",
                       color: "gray",
                       fontWeight: "bold",
-                      marginBottom: "16px"
                     }}
                   />
                   <br />
