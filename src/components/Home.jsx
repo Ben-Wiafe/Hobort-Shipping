@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import Hero from "./Hero";
+import Header from "./Header";
 import Card from "./Card";
 import Marque from "./Marque";
 import Calculator from "./Calculator";
@@ -10,6 +11,7 @@ import Footer from "./Footer";
 const Home = () => {
   return (
     <div className="container">
+      <Header/>
       <Hero />
       <Card />
       <Marque />
