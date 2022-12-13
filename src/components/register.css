@@ -1,23 +1,26 @@
 .regMain {
-  background-color: rgb(237, 233, 233);
-  max-width: 1540px;
-  margin: auto;
+  background-color: #f1f1f1;
+  margin:0
 }
-.register {
-  padding: 13px;
-  margin-left: 10px;
-}
+
 .registerMain {
   display: flex;
-  background-color: rgb(213, 210, 210);
-
-  margin: 10px;
+  /* align-items: center; */
+  background-color:#f1f1f1;
   height: 45vh;
+  border:1px solid #cdcaca;
   padding: 4px;
 }
 .completeregister {
   line-height: 20px;
   height: 90vh;
+  background-color: white;
+  padding:20px;
+  width:97%;
+  margin:auto;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: bold;
+  font-size:16px;
 }
 
 .location img {
@@ -36,12 +39,19 @@
 
 .regbutton {
   margin-left: 19px;
-  background-color: rgb(225, 225, 225);
-  padding: 8px 24px;
+  background-color: white;
+  padding: 8px 10px;
   border: 1px solid rgba(146, 144, 144, 0.609);
-  color: rgba(17, 17, 17, 0.921);
-  border-radius: 5px;
+  color: #ccc9c9;
+  border-radius: 3px;
+  font-weight: bold;
   font-size: 13px;
+  cursor: pointer;
+}
+.regbutton:hover{
+  background-color: rgb(215, 215, 215);
+  color:black;
+  transition: 0.2s ease-in-out;
 }
 
 .regbutton i {
@@ -51,25 +61,41 @@
   padding: 20px;
   line-height: 25px;
 }
+.regDetails h2{
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: bold;
+  font-size:16px;
+}
 .location h3 {
-  font-size: 13px;
+  font-size: 12px;
+}
+.location p{
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: normal;
+  font-size:12px;
 }
 .location span {
   font-size: 12px;
 }
 .create label {
-  font-size: 13px;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: normal;
+  font-size:12px;
 }
 .company {
   margin-top: 15px;
 }
 .company label {
-  font-size: 13px;
+  
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: normal;
+  font-size:12px;
 }
 .company input {
-  width: 100%;
-  border-radius: 5px;
-  padding: 14px 15px;
+  border-radius: 2px;
+  width:90%;
+  display: block;
+  padding: 8px 10px;
   /* border: 1px solid rgb(152, 151, 151); */
 }
 .nameform {
@@ -83,21 +109,22 @@
 .phonType {
   font-size: 13px;
 }
+
 .labelselect {
   display: flex;
   flex-direction: column;
   width: 20%;
 }
 .labelselect select {
-  border-radius: 5px;
+  border-radius: 2px;
   height: 2.2rem;
-  border: 0;
+  width:80px;
   border: 1px solid rgb(152, 151, 151);
 }
 .reginpu {
   width: 100%;
-  padding: 10px 15px;
-  border-radius: 5px;
+  padding: 8px 10px;
+  border-radius: 2px;
 }
 .nameform select {
   padding: 10px 0px;
@@ -105,8 +132,8 @@
   border: 1px solid rgb(152, 151, 151);
 }
 .nameform input {
-  border-radius: 5px;
-  padding: 14px 5px;
+  border-radius: 2px;
+  padding: 8px 10px;
   
 }
 .creat {
@@ -114,19 +141,19 @@
   align-items: center;
 }
 .phoneInput {
-  width: 360px;
+  width: 350px;
   margin-top: 20px;
 }
 .PhoneInputInput {
   height: 40px;
-  padding: 10px;
+  padding: 8px 10px;
   margin-top: 10px;
   font-size: 13px;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .phonType {
   margin-top: 10px;
-  margin-right: 50px;
+  margin-right: 30px;
 }
 .email {
   padding: 14px 20px;
@@ -134,9 +161,17 @@
   border-radius: 5px;
   border:0;
 }
+/* .emailLogin{
+  margin-top: 0px;
+} */
 .emailLogin p {
   color: red;
   font-size: 13px;
+}
+.emailLogin h2{
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: bold;
+  font-size:16px;
 }
 .emailLogin {
   display: flex;
@@ -148,14 +183,16 @@
 }
 .emailLogin input {
   font-size: 13px;
-  padding: 14px 20px;
+  padding: 8px 10px;
   width: 350px;
-  border-radius: 5px;
+  border-radius: 2px;
   
   
 }
 .emailLogin label {
-  font-size: 13px;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: normal;
+  font-size:12px;
   margin-bottom: -5px;
 }
 .lastdown {
@@ -166,13 +203,13 @@
   margin-bottom: 2rem;
 }
 .tickbox {
-  height: 16px;
-  width: 16px;
+  height: 12px;
+  width: 12px;
 }
 .ticklabel {
-  font-size: 15px;
+font-weight: normal;
   padding: 5px;
-  font-size: 15px;
+  font-size: 14px;
 }
 .nameform p {
   color: red;
@@ -186,9 +223,11 @@
   font-weight: bold;
   margin-bottom: 1.3rem;
   margin-top: 1rem;
+  font-size:16px
 }
-.lastdown p {
-  font-size: 15px;
+.lastdown p { 
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .lastdown h3 {
@@ -196,17 +235,15 @@
   margin-bottom: 1rem;
 }
 .registerButton {
-  font-size: 15px;
+  font-size: 16px;
   background-color: rgb(14, 113, 14);
   border-radius: 5px;
-  padding: 6px 40px;
+  padding: 8px 30px;
   width: fit-content;
   color: white;
 }
 
-.register {
-  padding: 1rem;
-}
+
 .ticklabel a {
   color: rgb(41, 98, 183);
   font-size: 15px;
@@ -216,13 +253,13 @@
 .buttonright {
   margin-top: 15px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
 }
 
 .error {
   
   border:1px solid red;
+  font-weight: normal;
 
   
 }
