@@ -49,16 +49,16 @@ const Header = () => {
           </a>{" "}
           <ul className="Ulist">
             <li>
-              <Link to="/">Home</Link>{" "}
+              <Link to="/">Help and Support</Link>{" "}
             </li>{" "}
             <li>
-              <Link to="/about">About Us</Link>{" "}
+              <Link to="/about">Find a location</Link>{" "}
             </li>{" "}
-            <li> Services </li> <li> FAQ </li>{" "}
+            <li> Services </li> <li> View/Pay Bill</li>{" "}
             <li>
               {" "}
               <button  className="login" type="submit" onClick={()=> setShow(!show)}>
-                Login
+                Logout
               </button>
             </li>
           </ul>{" "}
@@ -81,10 +81,10 @@ const Header = () => {
         </nav>{" "}
         <div className={`sublist ${sticky}`}>
           <ul className={`subblist ${stickyback}`}>
-            <li> info @hobortshipping </li> <li> +233 50 403 0404 </li> <li> +1 770 676 6044 </li> <li> +1 404 543 4422 </li>{" "}
-            <li>
+            <li> Home </li> <li> Ship </li> <li> Track </li> <li> Manage Shipment </li>{" "}
+            <li style={{marginLeft:'50rem'}}>
               {" "}
-              <Link to="/register">Register</Link>
+              <Link to="/register">My Profile</Link>
             </li>
           </ul>{" "}
 
