@@ -3,7 +3,8 @@ import gh from "../assets/logo.png";
 import "../components/Header.css";
 import { Link } from "react-router-dom";
 import Login from "./Login";
-import {GiHamburgerMenu} from 'react-icons/gi'
+import {GiHamburgerMenu} from 'react-icons/gi';
+import {FiSearch} from 'react-icons/fi';
 
 const Header = () => {
   const [stickyClass, setStickyClass] = useState("");
@@ -54,37 +55,22 @@ const Header = () => {
             <li>
               <Link to="/about">Find a location</Link>{" "}
             </li>{" "}
-            <li> Services </li> <li> View/Pay Bill</li>{" "}
-            <li>
-              {" "}
-              <button  className="login" type="submit" onClick={()=> setShow(!show)}>
-                Logout
-              </button>
-            </li>
-          </ul>{" "}
-          <GiHamburgerMenu className="hamburger"/>
-          <ul className="Ulis">
-            <li>
-              <Link to="/">Home</Link>{" "}
-            </li>{" "}
-            <li>
-              <Link to="/about">About Us</Link>{" "}
-            </li>{" "}
-            <li> Services </li> <li> FAQ </li>{" "}
+            <li> <FiSearch size="20px"/> </li>{" "}
             <li>
               {" "}
               <button  className="login" type="submit" onClick={()=> setShow(!show)}>
                 Login
               </button>
             </li>
-          </ul>{""}
+          </ul>{" "}
         </nav>{" "}
+<hr ></hr>
         <div className={`sublist ${sticky}`}>
           <ul className={`subblist ${stickyback}`}>
-            <li> Home </li> <li> Ship </li> <li> Track </li> <li> Manage Shipment </li>{" "}
-            <li style={{marginLeft:'50rem'}}>
+            <li> Home </li> <li> Ship </li> <li> Track </li> {" "}
+            <li style={{marginLeft:'50rem', fontSize:'13px'}} >
               {" "}
-              <Link to="/register">My Profile</Link>
+              <Link to="/register" className="register_Hover" style={{textDecoration:'none'}}>Register</Link>
             </li>
           </ul>{" "}
 
