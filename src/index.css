@@ -15,9 +15,15 @@ import 'font-awesome/css/font-awesome.min.css';
 body {
  
   font-family: Arial,Helvetica,sans-serif;
-  overflow-x:hidden;
   color: #333;
+  margin:auto;
 
+}
+label{
+  font-weight: normal;
+}
+a{
+  text-decoration: none;
 }
 
 .conTainer{
