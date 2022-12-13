@@ -7,12 +7,14 @@ import Footer from "./Footer";
 import "./styles.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import Header from './Header';
 import { BsCheckAll } from "react-icons/Bs";
 
 const Register = () => {
   const [value, setValue] = useState("");
   const [show, setShow] = useState(false);
-  const handleshow = () => setShow(!show);
+  const [yes, setYes] = useState(false);
+  
 
   const formik = useFormik({
     initialValues: {
@@ -65,11 +67,14 @@ const Register = () => {
     
   }); 
   return (
-    <>
+    
+    <div style={{backgroundColor:'#f1f1f1'}}>
+    <Header/>
+    <div style={{width:'85%', margin:'auto'}}>
       <div className="regMain">
         <div>
           <div className="regContainer">
-            <div className="register">
+            <div style={{backgroundColor:'#f1f1f1'}}>
               <h2>Register for Hobort+</h2>
             </div>
 
@@ -85,11 +90,12 @@ const Register = () => {
               <br />
               <div className="buttons">
                 <div className="buttop">
-                  <button>Yes</button>
+                  <button onClick={() => {setYes(true); setShow(false)}} >Yes</button>
                   <p>You'll see able to view your preferential rates and bill shipments to Hobort account. </p>
                 </div>
+                {yes ? <div><p>it worked</p></div> : null}
                 <div className="buttop">
-                  <button type="button" onClick={handleshow}>
+                  <button type="button" onClick={()=> {setShow(!show);setYes(false)}}>
                     No
                   </button>
                   <p>No account? No problem! Register and pay cash </p>
@@ -128,7 +134,7 @@ const Register = () => {
                     </select>
                   </div>
                   <div>
-                    <label> First Name </label>
+                    <label style={{fontSize:'12px', fontWeight:'normal'}}> First Name </label>
                     <input
                     required
                       type="text"
@@ -140,11 +146,11 @@ const Register = () => {
                       onBlur={formik.handleBlur}
                       value={formik.values.firstName}
                     />
-                    {formik.touched.firstName && formik.errors.firstName ? <p>{formik.errors.firstName}</p> : null}
+                    {formik.touched.firstName && formik.errors.firstName ? <p style={{fontWeight:'normal'}}>{formik.errors.firstName}</p> : null}
                   </div>
                   <div className="reginput" >
                     {" "}
-                    <label> Last Name </label>
+                    <label style={{fontSize:'12px', fontWeight:'normal'}}> Last Name </label>
                     <input
                       type="text"
                       className={formik.errors.lastName && formik.touched.lastName ? "error" : !formik.errors.lastName && formik.touched.lastName ? 'success' : null}
@@ -271,7 +277,7 @@ const Register = () => {
           <div className="lastdown">
             <input type="checkbox" className="tickbox" />
             <label className="ticklabel">I would like to receive informational emails and promotional offers from Hobort</label>
-
+                  <br/> <br/>
             <h3>Would you like to apply for a Hobort account? </h3>
             <p>
               If your company ships regularly, having an account offers many benefits- preferential rates, regular billing,
@@ -283,14 +289,14 @@ const Register = () => {
             <input type="checkbox" className="tickbox" />
             <label className="ticklabel">I'd like to apply for a Hobort account</label>
             <br />
+            <br/>
             <h3>Accept Terms</h3>
-                  <br/>
+                  
             <input type="checkbox" className="tickbox" required />
             <label className="ticklabel">
               I accept the Hobort Express <a href="#">Terms and Conditions</a> and{" "}
               <a href="#">Digital Customs Invoice Terms and Conditions</a>{" "}
             </label>
-            <br />
             <br />
             <input type="checkbox" className="tickbox" required />
             <label className="ticklabel">
@@ -304,8 +310,14 @@ const Register = () => {
           </div>
         </form>
       </div>
-      <Footer />
-    </>
+      {/* <Footer /> */}
+      <br/>
+      <br/>
+      <br/>
+      <Footer/>
+    </div>
+
+    </div>
   );
 };
 export default Register;
