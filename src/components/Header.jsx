@@ -53,7 +53,7 @@ const Header = () => {
               <Link to="/">Help and Support</Link>{" "}
             </li>{" "}
             <li>
-              <Link to="/about">Find a location</Link>{" "}
+              <Link to="/shipment">Find a location</Link>{" "}
             </li>{" "}
             <li> <FiSearch size="20px"/> </li>{" "}
             <li>
