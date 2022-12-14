@@ -7,7 +7,7 @@ import Create_from_fav from './loginFiles/Create_from_fav';
 import Get_quote from "./loginFiles/get_quote";
 import Schedule_pickup from "./loginFiles/schedule_pickup";
 import LoginHeader from "./LoginHeader";
-
+import {Link} from 'react-router-dom'
 
 
 const LoginHomepage = () => {
@@ -55,13 +55,13 @@ const LoginHomepage = () => {
           <span style={{ marginRight: "5px" }}>
             <button style={{ padding: "7px 12px 8px", border: "1px solid orange",borderTopRightRadius:'3px',   }}  className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
             onClick={() => toggleTab(4)}>
-              Schedule a Pickup
+              <Link to="/loginhome/schedulePickUp">  Schedule a Pickup</Link>
             </button>
           </span>
           <span >
             <button style={{ padding: "7px 12px 8px", border: "1px solid orange",borderTopRightRadius:'3px',   }}  className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
             onClick={() => toggleTab(5)}>
-              Get a quote
+             <Link to="/loginhome/getQuote"> Get a quote</Link>
             </button>
           </span>
           </div>
