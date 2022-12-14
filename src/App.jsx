@@ -2,20 +2,36 @@ import React from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Register from "./components/Register";
-import About from "./components/About";
+import Createshipment from "./components/Createshipment";
 import Home from "./components/Home";
 import Header from "./components/Header";
 import LoginHomepage from "./components/LoginHomepage";
-
+import Ship from "./components/loginFiles/Create_from_ship";
+import Schedule_pickup from "./components/loginFiles/schedule_pickup";
+import Create_from_fav from "./components/loginFiles/Create_from_ship";
+import Create_from_past from './components/loginFiles/Create_from_past';
+import Get_quote from "./components/loginFiles/get_quote";
 const App = () => {
   return (
     <>
       <div className="container" />
       <Routes>
         <Route path="/" element={<Home />} /> 
-        <Route path="/loginhome" exact element={<LoginHomepage />} />{" "}
+        <Route path="/loginhome" exact element={<LoginHomepage />}> 
+        <Route path="createNewShipment" element={<Ship/>}/>
+        <Route path="createFromPast" element={<Create_from_past/>}/>
+        <Route path="createFromFav" element={<Create_from_fav/>}/>
+        <Route path="getQuote" element={<Get_quote/>}/>
+        <Route path="schedulePickUp" element={<Schedule_pickup/>}/>
+
+        </Route>{" "}
         <Route path="/register" element={<Register />} exact />
-        <Route path="/about" element={<About />} exact />= {/* <Route path="/home" element={'*'} exact /> */}{" "}
+        <Route path="/shipment" element={<Createshipment/>} exact >
+           
+          
+          
+          </Route> 
+        
       </Routes>{" "}
     </>
   );

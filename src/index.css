@@ -43,3 +43,9 @@ a{
   --swiper-navigation-size:22px; !important
   
 }
+.shipdropdown li{
+  font-size:15px;
+}
+.shipdropdown a{
+  color: white;
+}
