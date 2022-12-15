@@ -10,6 +10,7 @@ import { FaGripLinesVertical } from "react-icons/fa";
 import ShipDropdown from "./shipmentFiles/ShipDropdown";
 import TrackDropdown from "./shipmentFiles/TrackDropdown";
 import ManageShipment from "./shipmentFiles/ManageShipment";
+import { ShipmentSettings } from "./loginFiles/ShipmentSettings";
 const LoginHeader = () => {
   const [stickyClass, setStickyClass] = useState("");
   const [sticky, setSticky] = useState("");
@@ -18,7 +19,7 @@ const LoginHeader = () => {
   const [trackdropdown, setTrackDropdown] = useState(false)
   const [managedown, setManagedown] = useState(false)
   const [isOpen, setIsOpen] = useState(false);
-
+  const [shipment,setShipment] = useState(false);
   const handleBlur = () => {
     setIsOpen(false);
   };
@@ -121,12 +122,14 @@ const LoginHeader = () => {
                   Hobort MyAccount
                 </Link>
               </li >
-              <li onClick={()=> {setManagedown(false); setShipDropdown(false);setTrackDropdown(false); }}>
+              <li onClick={()=> {setManagedown(false); setShipDropdown(false);setTrackDropdown(false); setShipment(!shipment)}}>
                 {" "}
-                <Link to="/register" className="register_Hover" style={{ textDecoration: "none", fontSize: "13px" }}>
+                <Link to="#" className="register_Hover" style={{ textDecoration: "none", fontSize: "13px" }}>
                   My Shipment Settings
                 </Link>
-              </li  >
+              </li >
+              {shipment && <ShipmentSettings/>}
+
               <li onClick={()=> {setManagedown(false); setShipDropdown(false);setTrackDropdown(false); }}>
                 {" "}
                 <Link to="/register" className="register_Hover" style={{ textDecoration: "none", fontSize: "13px" }}>
