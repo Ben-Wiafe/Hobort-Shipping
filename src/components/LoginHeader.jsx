@@ -118,7 +118,7 @@ const LoginHeader = () => {
             <div style={{ marginLeft: "23rem", display: "flex", alignItems: "center" }} onClick={()=> {setManagedown(false); setShipDropdown(false);setTrackDropdown(false); }}>
               <li onClick={()=> {setManagedown(false); setShipDropdown(false);setTrackDropdown(false); }}>
                 {" "}
-                <Link to="/register" className="register_Hover" style={{ textDecoration: "none", fontSize: "13px" }}>
+                <Link  to ="#" className="register_Hover" style={{ textDecoration: "none", fontSize: "13px" }}>
                   Hobort MyAccount
                 </Link>
               </li >
