@@ -9,11 +9,12 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import Header from './Header';
 import { BsCheckAll } from "react-icons/Bs";
-
+import Login from './Login';
 const Register = () => {
   const [value, setValue] = useState("");
   const [show, setShow] = useState(false);
   const [yes, setYes] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
   
 
   const formik = useFormik({
@@ -69,7 +70,8 @@ const Register = () => {
   return (
     
     <div style={{backgroundColor:'#f1f1f1'}}>
-    <Header/>
+     <Header onButtonClick={() => setModalOpen(!modalOpen)}/>
+      {modalOpen && <Login onClose={() => setModalOpen(false)} />}
     <div style={{width:'85%', margin:'auto'}}>
       <div className="regMain">
         <div>
