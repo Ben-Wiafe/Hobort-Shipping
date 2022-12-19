@@ -11,7 +11,10 @@ import Schedule_pickup from "./components/loginFiles/schedule_pickup";
 import Create_from_fav from "./components/loginFiles/Create_from_ship";
 import Create_from_past from './components/loginFiles/Create_from_past';
 import Get_quote from "./components/loginFiles/get_quote";
+import ResetPassword from './components/ResetPassword';
 const App = () => {
+
+
   return (
     <>
       <div className="container" />
@@ -26,13 +29,10 @@ const App = () => {
 
         </Route>{" "}
         <Route path="/register" element={<Register />} exact />
-        <Route path="/shipment" element={<Createshipment/>} exact >
-           
-          
-          
-          </Route> 
-        
+        <Route path="/shipment" element={<Createshipment/>} exact />     
+        <Route path="/forgot-password" element={<ResetPassword/>} exact />     
       </Routes>{" "}
+/
     </>
   );
 };
