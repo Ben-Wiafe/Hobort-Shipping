@@ -6,7 +6,7 @@ import Login from "./Login";
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {FiSearch} from 'react-icons/fi';
 
-const Header = () => {
+const Header = (props) => {
   const [stickyClass, setStickyClass] = useState("");
   const [sticky, setSticky] = useState("");
   const [show, setShow] = useState(false)
@@ -53,12 +53,12 @@ const Header = () => {
               <Link to="/">Help and Support</Link>{" "}
             </li>{" "}
             <li>
-              <Link to="/shipment">Find a location</Link>{" "}
+              <Link to="/">Find a location</Link>{" "}
             </li>{" "}
             <li> <FiSearch size="20px"/> </li>{" "}
             <li>
               {" "}
-              <button  className="login" type="submit" onClick={()=> setShow(!show)}>
+              <button  className="login" type="submit" onClick={props.onButtonClick}>
                 Login
               </button>
             </li>
@@ -75,7 +75,7 @@ const Header = () => {
           </ul>{" "}
 
         </div>{" "}
-     { show ? <Login/> : ''}
+     {/* { show ? <Login/> : ''} */}
       </div>
     </>
   );
