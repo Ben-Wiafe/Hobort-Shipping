@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "../App.css";
 import Hero from "./Hero";
 import Header from "./Header";
@@ -7,11 +7,14 @@ import Marque from "./Marque";
 import Calculator from "./Calculator";
 import Express from "./Express";
 import Footer from "./Footer";
-
+import Login from './Login';
 const Home = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <div className="container">
-      <Header/>
+      <Header onButtonClick={() => setModalOpen(!modalOpen)}/>
+      {modalOpen && <Login onClose={() => setModalOpen(false)} />}
       <Hero />
       <Card />
       <Marque />
