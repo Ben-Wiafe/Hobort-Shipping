@@ -50,7 +50,7 @@ const Header = (props) => {
           </a>{" "}
           <ul className="Ulist">
             <li>
-              <Link to="/">Help and Support</Link>{" "}
+              <Link to="/help-support">Help and Support</Link>{" "}
             </li>{" "}
             <li>
               <Link to="/">Find a location</Link>{" "}
