@@ -54,7 +54,6 @@ const ResetPassword = () => {
               className={hasError ? 'error': null }
 
             />
-            {/* {errors.email ? <div style={{display:'inline-block', color:'red'}}>*</div>: <div id="email-error">true</div> } */}
 
 
             <div className="cancelsubmit">
