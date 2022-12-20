@@ -1,0 +1,13 @@
+.tab-title{
+    margin:14px 0;
+    border-right: 1px solid grey;
+    cursor:pointer;
+    padding:9px;
+}
+.tab-title:hover{
+    border-bottom: 7px solid gray;
+}
+.tabb{
+    border-bottom: 7px solid orange;
+   
+}
