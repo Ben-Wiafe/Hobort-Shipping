@@ -47,14 +47,15 @@ const [selected, setSelected] = useState(false);
             marginLeft: "auto",
             marginRight: "auto",
             lineHeight: "14px",
-            borderColor: "grey"
+            borderColor: "grey",
+
           }}
         >
           <tbody>
             <tr>
               <td onClick={handleClick1} className={selected ? 'tabb' : 'tab-title'}>
                 {" "}
-                <div > Shipping Advice </div>
+                <div  style={{padding:'9px'}}> Shipping Advice </div>
               </td>
               <td onClick={handleClick2} className={selected ? 'tabb' : 'tab-title'}>
               <div>Customs Clearance Advice </div>
