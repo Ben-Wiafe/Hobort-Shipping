@@ -9,7 +9,7 @@
 .card {
     padding-top: 4px;
     box-shadow: 2px 5px 5px #d1cece;
-    width: 190px;
+    width: 240px;
     justify-content: center;
     align-items: center;
     margin-bottom: 70px;
@@ -29,6 +29,7 @@
 .card:nth-child(4) {
     flex-grow: 1;
     background-color: #fd7e14;
+    padding:0px 20px 0px 20px;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     width: 12px;
