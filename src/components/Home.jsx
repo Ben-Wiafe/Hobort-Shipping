@@ -8,6 +8,7 @@ import Calculator from "./Calculator";
 import Express from "./Express";
 import Footer from "./Footer";
 import Login from './Login';
+// import Carousel from './Carousel';
 const Home = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -15,9 +16,12 @@ const Home = () => {
     <div className="container">
       <Header onButtonClick={() => setModalOpen(!modalOpen)}/>
       {modalOpen && <Login onClose={() => setModalOpen(false)} />}
+    
       <Hero />
-      <Card />
+      <Card />      
       <Marque />
+      {/* <Carousel/> */}
+      <br/>
       <Calculator />
       <Express />
       <Footer />
