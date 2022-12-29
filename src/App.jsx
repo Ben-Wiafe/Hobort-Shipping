@@ -10,8 +10,12 @@ import Ship from "./components/loginFiles/Create_from_ship";
 import Schedule_pickup from "./components/loginFiles/schedule_pickup";
 import Create_from_fav from "./components/loginFiles/Create_from_ship";
 import Create_from_past from './components/loginFiles/Create_from_past';
-import HelpSupport from "./components/HelpSupport";
+// import HelpSupport from "./components/HelpSupport";
 import Get_quote from "./components/loginFiles/get_quote";
+// import  HelpCard from "./components/HelpSupport";
+// import CustomCard from "./components/HelpSupport";
+// import FAQCard from './components/HelpSupport';
+// import  ContactCard  from "./components/HelpSupport";
 import ResetPassword from './components/ResetPassword';
 const App = () => {
 
@@ -22,7 +26,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} /> 
         <Route path="/loginhome" exact element={<LoginHomepage />}> 
-        <Route path="createNewShipment" element={<Ship/>}/>
+        <Route path="createNewShipment" element={<Ship/>}/> 
         <Route path="createFromPast" element={<Create_from_past/>}/>
         <Route path="createFromFav" element={<Create_from_fav/>}/>
         <Route path="getQuote" element={<Get_quote/>}/>
@@ -31,7 +35,14 @@ const App = () => {
         </Route>{" "}
         <Route path="/register" element={<Register />} exact />
         <Route path="/shipment" element={<Createshipment/>} exact />     
-        <Route path="/help-support" element={<HelpSupport/>} exact />     
+        {/* <Route path="/help-support" element={<HelpSupport/>} exact>
+        <Route path="helpcard" element={<HelpCard/>} exact />     
+        <Route path="customcard" element={<CustomCard/>} exact />     
+        <Route path="faq" element={<FAQCard/>} exact />     
+        <Route path="contactcard" element={<ContactCard/>} exact />     
+
+
+          </Route>      */}
         <Route path="/forgot-password" element={<ResetPassword/>} exact />     
         
       </Routes>{" "}
