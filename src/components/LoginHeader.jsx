@@ -93,7 +93,7 @@ const LoginHeader = () => {
         <hr />
         <div className={`sublist ${sticky}`} >
           <ul className={`subblist ${stickyback}`} onBlur={handleBlur} >
-            <li> <Link to="/loginHome">Home</Link></li> 
+            <li> <Link to="/">Home</Link></li> 
             <li onClick={()=> {setTrackDropdown(false); setShipDropdown(!shipdropdown);setManagedown(false)}} style={{transition:'0.2s ease'}}> Ship </li>
             {shipdropdown && <ShipDropdown/>}
             <li onClick={()=> {setTrackDropdown(!trackdropdown); setShipDropdown(false);setManagedown(false)}} style={{transition:'0.2s ease'}}> Track </li>
