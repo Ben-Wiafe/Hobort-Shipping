@@ -45,9 +45,9 @@ const Header = (props) => {
     <>
       <div className={`main example ${stickyClass}`}>
         <nav className="header">
-          <a href="/">
+          <Link to="/">
             <img src={gh} alt="Website logo" />
-          </a>{" "}
+          </Link>{" "}
           <ul className="Ulist">
             <li>
               <Link to="/help-support">Help and Support</Link>{" "}
@@ -67,7 +67,9 @@ const Header = (props) => {
 <hr ></hr>
         <div className={`sublist ${sticky}`}>
           <ul className={`subblist ${stickyback}`}>
-            <li> Home </li> <li> Ship </li> <li> Track </li> {" "}
+            <li> <Link to="/">Home</Link> </li> 
+            <li> Ship </li> 
+            <li> Track </li> {" "}
             <li style={{marginLeft:'50rem', fontSize:'13px'}} >
               {" "}
               <Link to="/register" className="register_Hover" style={{textDecoration:'none'}}>Register</Link>

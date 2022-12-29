@@ -69,11 +69,19 @@
     padding: 10px 8px 0px 8px;
     margin-right: 2rem;
     font-size: 17px;
+    color:black
 }
 
 .subblist li:hover {
     color: #fd7e14;
     transition: 0.2s ease;
+}
+.subblist a:hover {
+    color: #fd7e14;
+    transition: 0.2s ease;
+}
+.subblist a{
+    color:black
 }
 
 .header img {
