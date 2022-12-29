@@ -4,7 +4,7 @@ const ProCard = ({image,head,para,link}) => {
   return (
     <div className="promain">
     <div className="procard">
-    <img src={image}/>
+    <img src={image} alt={head}/>
     <div className="protext">
     <strong className="prohead">{head}</strong>
     <p className="propara">
