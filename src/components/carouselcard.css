@@ -1,0 +1,61 @@
+.caromain {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin: 0px 30px;
+    border-radius: 7px;
+    margin-bottom:10px;
+}
+::-webkit-scrollbar{
+    width:0px;
+}
+.caromain:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.399);
+}
+
+.carocard img {
+    width: 93%;
+    max-height: 350px;
+    object-fit: cover;
+    margin:0;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    
+}
+.carocard{
+    display: flex;
+}
+
+.carotext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index:1;
+    padding: 14px 16px;
+    margin-top: 10px;
+    right:3rem
+}
+
+.carohead {
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.774);
+}
+
+.caropara {
+    margin-top: 14px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgba(27, 24, 24, 0.708);
+}
+
+.carolink {
+    text-decoration: none;
+    text-align: end;
+    color: rgb(68, 124, 230);
+}
+
+.carolink p {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
