@@ -7,16 +7,20 @@ import Create_from_fav from './loginFiles/Create_from_fav';
 import Get_quote from "./loginFiles/get_quote";
 import Schedule_pickup from "./loginFiles/schedule_pickup";
 import LoginHeader from "./LoginHeader";
-import {Link} from 'react-router-dom'
+import {Link, useNavigate, useLocation, } from 'react-router-dom'
+import { Navigation } from "swiper";
 
 
 const LoginHomepage = () => {
- 
+ const location = useLocation();
+  const navigate = useNavigate();
   const [toggleState, setToggleState] = useState(1);
 
   const toggleTab = (index) => {
     setToggleState(index);
   };
+
+  console.log(location.pathname);
   return (
 
    <>
@@ -35,42 +39,42 @@ const LoginHomepage = () => {
       >
         <div style={{ width: "74%" }}>
           <div><span style={{ marginRight: "5px" }}>
-            <button style={{ padding: "7px 12px 8px", border: "1px solid orange",borderTopRightRadius:'3px', }} className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(1)}>
+            <Link to={"/loginhome/createNewShipment"} style={{ padding: "7px 12px 8px", border: "1px solid orange",borderTopRightRadius:'3px', }} className={location.pathname == "/loginhome/createNewShipment" ? "tabs active-tabs" : "tabs"}
+         >
               Create a New Shipment
-            </button>
+            </Link>
           </span>
           <span style={{ marginRight: "5px" }}>
-            <button style={{ padding: "5px 12px 8px", border: "1px solid orange",borderTopRightRadius:'3px'}}  className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(2)}>
+            <Link to={"/loginhome/createFromFav"}   style={{ padding: "5px 12px 8px", border: "1px solid orange",borderTopRightRadius:'3px'}}  className={location.pathname == "/loginhome/createFromFav" ? "tabs active-tabs" : "tabs"}
+            >
               Create from Favorite
-            </button>
+            </Link>
           </span>
           <span style={{ marginRight: "5px" }}>
-            <button style={{ padding: "7px 12px 8px", border: "1px solid orange",borderTopRightRadius:'3px',  }}  className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(3)}>
+            <Link to={"/loginhome/createFromPast"} style={{ padding: "7px 12px 8px", border: "1px solid orange",borderTopRightRadius:'3px',  }}  className={location.pathname == "/loginhome/createFromPast" ? "tabs active-tabs" : "tabs"}
+     >
               Create from Past
-            </button>
+            </Link>
           </span>
           <span style={{ marginRight: "5px" }}>
-            <button style={{ padding: "7px 12px 8px", border: "1px solid orange",borderTopRightRadius:'3px',   }}  className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(4)}>
-              <Link to="/loginhome/schedulePickUp">  Schedule a Pickup</Link>
-            </button>
+          <Link to={"/loginhome/schedulePickUp"} style={{ padding: "7px 12px 8px", border: "1px solid orange",borderTopRightRadius:'3px',   }}  className={location.pathname == "/loginhome/ScheduleFromFav"? "tabs active-tabs" : "tabs"}
+            >
+             Schedule a Pickup
+            </Link>
           </span>
           <span >
-            <button style={{ padding: "7px 12px 8px", border: "1px solid orange",borderTopRightRadius:'3px',   }}  className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(5)}>
-             <Link to="/loginhome/getQuote"> Get a quote</Link>
-            </button>
+            <Link to={"/loginhome/getQuote"} style={{ padding: "7px 12px 8px", border: "1px solid orange",borderTopRightRadius:'3px',   }}  className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
+            >
+              Get a quote
+            </Link>
           </span>
           </div>
           <div style={{ backgroundColor: "#666", padding: "3rem 0px 2rem 1rem", display: "flex", borderColor:'green', borderTopWidth:'4px'}}>
-           <ShipPage style={{display: toggleState === 1 ? "block" : "none"}}/>
-           <Create_from_fav style={{display: toggleState === 2 ? "block" : "none", margin:'auto'}}/>
-           <Create_from_past style={{display: toggleState === 3 ? "block" : "none", margin:'auto'}}/>
-           <Schedule_pickup style={{display: toggleState === 4 ? "block" : "none"}}/>
-           <Get_quote style={{display: toggleState === 5 ? "block" : "none", }}/>
+           <ShipPage style={{display: location.pathname === "/loginhome/createNewShipment" ? "block" : "none"}}/>
+           <Create_from_fav style={{display: location.pathname === "/loginhome/createFromFav" ? "block" : "none", margin:'auto'}}/>
+           <Create_from_past style={{display: location.pathname === "/loginhome/createFromPast" ? "block" : "none", margin:'auto'}}/>
+           <Schedule_pickup style={{display: location.pathname === "/loginhome/schedulePickUp" ? "block" : "none"}}/>
+           <Get_quote style={{display: location.pathname === "/loginhome/getQuote" ? "block" : "none", }}/>
 
           </div>
         </div>

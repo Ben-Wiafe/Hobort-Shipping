@@ -97,7 +97,7 @@ const Login = (props) => {
             </label>
           </div>
           <center>
-            <button className="loginButton" >
+            <button className="loginButton" disabled="true" >
             
                 <Link to="/shipment"><i className="fa-solid fa-circle-exclamation fa-sm" /> Login{" "}</Link>
             
